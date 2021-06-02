@@ -474,6 +474,23 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscription">
+          <p class="footer-paragraph">Подпишитесь на рассылку</p>
+          <form action="#" class="subscription-form" method="POST">
+            <input
+              class="subscription-form-input"
+              type="email"
+              name="user-email"
+              placeholder="E-mail"
+            />
+            <button class="hero-button subscription-button" type="submit">
+              Подписаться
+              <svg class="subscription-button-icon">
+                <use href="./images/sprite.svg#send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!--================================== END FOOTER ================================-->
@@ -486,6 +503,56 @@
             <use href="./images/sprite.svg#modal-close"></use>
           </svg>
         </button>
+        <form class="modal-form" method="POST" action="#">
+          <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+          <label class="form-label" for="user-name">Имя</label>
+          <input
+            class="form-input"
+            type="text"
+            id="user-name"
+            name="user-name"
+            required
+          />
+          <svg class="user-name-icon">
+            <use href="./images/sprite.svg#person-black"></use>
+          </svg>
+          <label class="form-label" for="user-phone">Телефон</label>
+          <input
+            class="form-input"
+            type="tel"
+            id="user-phone"
+            name="user-phone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required
+          />
+          <label class="form-label" for="user-email">Почта</label>
+          <input
+            class="form-input"
+            type="email"
+            id="user-email"
+            name="user-email"
+            required
+          />
+          <label class="form-label" for="comment">Комментарий</label>
+          <textarea
+            class="form-comment"
+            name="user-comment"
+            id="comment"
+            placeholder="Введите текст"
+            required
+          ></textarea>
+          <div class="user-agreement">
+            <label for=""></label>
+            <input type="checkbox" />
+            <p class="user-agreement-title">
+              Соглашаюсь с рассылкой и принимаю
+              <a class="user-agreement-link" href="">Условия договора</a>
+            </p>
+          </div>
+          <button class="hero-button modal-button" type="submit">
+            Отправить
+          </button>
+        </form>
       </div>
     </div>
 
