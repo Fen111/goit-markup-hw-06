@@ -476,7 +476,7 @@
         </div>
         <div class="footer-subscription">
           <p class="footer-paragraph">Подпишитесь на рассылку</p>
-          <form action="#" class="subscription-form" method="POST">
+          <form class="subscription-form" method="POST">
             <input
               class="subscription-form-input"
               type="email"
@@ -504,43 +504,67 @@
           </svg>
         </button>
         <form class="modal-form" method="POST" action="#">
-          <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
-          <label class="form-label" for="user-name">Имя</label>
-          <input
-            class="form-input"
-            type="text"
-            id="user-name"
-            name="user-name"
-            required
-          />
-          <svg class="user-name-icon">
-            <use href="./images/sprite.svg#person-black"></use>
-          </svg>
-          <label class="form-label" for="user-phone">Телефон</label>
-          <input
-            class="form-input"
-            type="tel"
-            id="user-phone"
-            name="user-phone"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-            required
-          />
-          <label class="form-label" for="user-email">Почта</label>
-          <input
-            class="form-input"
-            type="email"
-            id="user-email"
-            name="user-email"
-            required
-          />
-          <label class="form-label" for="comment">Комментарий</label>
-          <textarea
-            class="form-comment"
-            name="user-comment"
-            id="comment"
-            placeholder="Введите текст"
-            required
-          ></textarea>
+          <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+          <label class="form-label" for="user-name"
+            >Имя
+            <span class="form-label-wrapper">
+              <input
+                class="form-input"
+                type="text"
+                id="user-name"
+                name="user-name"
+                required
+              />
+              <svg class="form-input-icon">
+                <use href="./images/sprite.svg#person-black"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="form-label" for="user-phone"
+            >Телефон
+            <span class="form-label-wrapper">
+              <input
+                class="form-input"
+                type="tel"
+                id="user-phone"
+                name="user-phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required
+              />
+              <svg class="form-input-icon">
+                <use href="./images/sprite.svg#phone-black"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="form-label" for="user-email"
+            >Почта
+            <span class="form-label-wrapper">
+              <input
+                class="form-input"
+                type="email"
+                id="user-email"
+                name="user-email"
+                required
+              />
+              <svg class="form-input-icon">
+                <use href="./images/sprite.svg#email-black"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="form-label" for="comment"
+            >Комментарий
+            <textarea
+              class="form-comment"
+              name="user-comment"
+              id="comment"
+              placeholder="Введите текст"
+              required
+            ></textarea>
+          </label>
+
           <div class="user-agreement">
             <label for=""></label>
             <input type="checkbox" />
