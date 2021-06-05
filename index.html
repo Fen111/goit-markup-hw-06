@@ -505,29 +505,22 @@
         </button>
         <form class="modal-form" method="POST" action="#">
           <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
-          <label class="form-label" for="user-name"
+          <label class="form-label"
             >Имя
             <span class="form-label-wrapper">
-              <input
-                class="form-input"
-                type="text"
-                id="user-name"
-                name="user-name"
-                required
-              />
+              <input class="form-input" type="text" name="user-name" required />
               <svg class="form-input-icon">
                 <use href="./images/sprite.svg#person-black"></use>
               </svg>
             </span>
           </label>
 
-          <label class="form-label" for="user-phone"
+          <label class="form-label"
             >Телефон
             <span class="form-label-wrapper">
               <input
                 class="form-input"
                 type="tel"
-                id="user-phone"
                 name="user-phone"
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                 required
@@ -538,13 +531,12 @@
             </span>
           </label>
 
-          <label class="form-label" for="user-email"
+          <label class="form-label"
             >Почта
             <span class="form-label-wrapper">
               <input
                 class="form-input"
                 type="email"
-                id="user-email"
                 name="user-email"
                 required
               />
@@ -554,25 +546,29 @@
             </span>
           </label>
 
-          <label class="form-label" for="comment"
+          <label class="form-label"
             >Комментарий
             <textarea
               class="form-comment"
               name="user-comment"
-              id="comment"
               placeholder="Введите текст"
               required
             ></textarea>
           </label>
 
-          <div class="user-agreement">
-            <label for=""></label>
-            <input type="checkbox" />
+          <label class="user-agreement">
+            <input
+              class="user-agreement-checkbox"
+              type="checkbox"
+              name="subscription"
+            />
+            <span class="checkbox-icon"></span>
             <p class="user-agreement-title">
               Соглашаюсь с рассылкой и принимаю
               <a class="user-agreement-link" href="">Условия договора</a>
             </p>
-          </div>
+          </label>
+
           <button class="hero-button modal-button" type="submit">
             Отправить
           </button>
